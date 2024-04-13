@@ -8,7 +8,7 @@ public class NameController {
 
     @GetMapping("/reverse-name")
     public String reverseName(@RequestParam String name) {
-        return new StringBuilder(name).reverse().toString();
+        return name;
     }
 
     @PostMapping("/reverse-name")
